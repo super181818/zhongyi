@@ -1,17 +1,13 @@
 <html ng-app="app">
 <head>
     <meta charset="utf-8">
-    <base href="http://daoyou.xn--fjqxjk7rdys2oeep7f.com"/>
+    <base href="http://x-d-y-3.oss-cn-hangzhou.aliyuncs.com"/>
     <link rel="icon" href="data:image/ico;base64,aWNv">
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="msapplication-tap-highlight" content="no"/>
     <title>房卡包</title>
-    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-    <script type="text/javascript" src="/files/js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="/files/js/angular.min.js"></script>
-    <script type="text/javascript" src="/files/js/fastclick.js?v=2019"></script>
     <script type="text/javascript">
         var _thost = 'http://' + window.location.host;
         var pathArr = window.location.pathname.split("/");
@@ -26,7 +22,12 @@
         document.write('<script type="text/javascript" src="' + _thost + '/js/config.js?v=' + _tt + '"> <\/script>');
         document.write('<script type="text/javascript" src="/js/load.js?v=' + new Date().getTime() + '"> <\/script>');
         //var vConsole = new VConsole();
-    </script>
+    </script>    
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="/files/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/files/js/angular.min.js"></script>
+    <script type="text/javascript" src="/files/js/fastclick.js?v=2019"></script>
+
     <style>
         .black {
             -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
@@ -355,7 +356,7 @@
                 //alert('你点击了我的');
                 //var url = "<?php echo $base_url;?>home/index"+"<?php echo '?wid='.$wid; ?>";
                 var url = DynLoading.getPath('/');
-
+                //window.location.href = url   
                 window.location.replace(url)
             }
             $scope.gotoMyRedPackage = function () {
